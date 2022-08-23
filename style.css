@@ -17,6 +17,7 @@
 .logo {
     width: 100px;
     cursor: pointer;
+    z-index: 99999;
 }
 
 .navbar {
@@ -26,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 button {
@@ -36,15 +38,16 @@ button {
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    z-index: 99999;
 }
 
 .content {
     color: #fbfcfd;
     position: absolute;
-    top: 50%;
+    top: 31%;
     left: 8%;
-    transform: translateY(-50%);
     z-index: 2;
+    max-width: 100%;
 }
 
 h1 {
@@ -60,6 +63,7 @@ h1 {
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 999999;
 }
 
 .menu {
@@ -72,7 +76,6 @@ h1 {
 .social-link img, .useful-link img{
     width: 25px;
     margin: 5px auto;
-    cursor: pointer;
 }
 
 .social-link {
@@ -103,7 +106,6 @@ h1 {
     justify-content: space-between;
     position: absolute;
     bottom: -50px;
-    cursor: pointer;
 }
 
 @keyframes bubble {
@@ -156,4 +158,81 @@ h1 {
 }
 .bubbles img:nth-child(10){
     animation-delay: 0s;
+}
+
+.stark {
+    left: -18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -44%;
+    z-index: 3;
+    height: 100vh;
+}
+
+.stark img{
+    width: 22%;
+    max-width: 100%;
+    animation: stark 20s linear infinite;
+    bottom: 4px;
+}
+
+@keyframes stark {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(515%);
+        opacity: 1;
+    }
+}
+
+.human {
+    left: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -42%;
+    z-index: 3;
+    height: 100vh;
+}
+
+.human img {
+    width: 22%;
+    max-width: 100%;
+    animation: stark 20s linear infinite;
+    bottom: 4px;
+}
+
+.Bin {
+    left: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    z-index: 3;
+    height: 100vh;
+}
+
+.Bin img {
+    width: 22%;
+    max-width: 100%;
+    bottom: 4px;
 }
